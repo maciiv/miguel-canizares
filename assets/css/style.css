@@ -15,26 +15,6 @@ body {
     box-sizing: border-box;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-  
-  h2 {
-    color: #292929;
-    font-weight: 600;
-  }
-  
-  h4 {
-    color: #292929;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  
   a {
     color: #292929;
     text-decoration: none !important;
@@ -60,23 +40,6 @@ body {
   
   ::selection {
     background: #b8a07e;
-    color: #fff;
-  }
-  
-  .btn {
-    background: #333;
-    border: medium none;
-    border-radius: 0;
-    color: #fff;
-    font-size: 12px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 30px;
-    text-transform: uppercase;
-  }
-  
-  .btn:hover,
-  .btn:focus {
     color: #fff;
   }
   
@@ -119,11 +82,6 @@ body {
     padding-bottom: 90px;
   }
   
-  .paddsections {
-    padding-top: 90px;
-    padding-bottom: 90px !important;
-  }
-  
   .hvr-shutter-in-horizontal::before {
     background: #333;
   }
@@ -145,32 +103,15 @@ body {
   --------------------------------------------------------------*/
   .back-to-top {
     position: fixed;
-    visibility: hidden;
-    opacity: 0;
     right: 15px;
     bottom: 15px;
-    z-index: 996;
-    background: #b8a07e;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
+    z-index: 1;
     transition: all 0.4s;
   }
   
   .back-to-top i {
     font-size: 28px;
-    color: #fff;
     line-height: 0;
-  }
-  
-  .back-to-top:hover {
-    background: #c6b398;
-    color: #fff;
-  }
-  
-  .back-to-top.active {
-    visibility: visible;
-    opacity: 1;
   }
   
   /*--------------------------------------------------------------
@@ -216,18 +157,6 @@ body {
     margin-right: 10px;
   }
 
-  .navbar a,
-  .navbar a:focus {
-    transition: 0.3s;
-  }
-  
-  .navbar a i,
-  .navbar a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-  }
-
   @media (max-width: 991px) {
     #header li {
       margin-left: auto;
@@ -270,16 +199,24 @@ body {
     font-weight: 500;
   }
   
-  .hero-content .list-social li {
-    float: left;
-    margin-right: 20px;
-  }
-  
-  .hero-content .list-social li i {
+  .hero-content li i {
     color: #fff;
     font-size: 15px;
+    transition: all 0.5s ease-in-out 0s;
   }
   
+  .hero-content li i:hover {
+    color: black;
+  }
+
+  .hero-content .img-social.orcid {
+    margin-top: -2px
+  }
+
+  .hero-content .img-social {
+    height: 17px
+  }
+
   /*--------------------------------------------------------------
   # Breadcrumbs
   --------------------------------------------------------------*/
@@ -345,15 +282,12 @@ body {
   /*  About
   /*-----------------------------------------------------------------------------------*/
   #about {
-    width: 100%;
-    height: auto;
-    background: #f7f7f7;
-    padding-top: 120px;
+    background: black;
   }
   
   #about .div-img-bg {
     padding-bottom: 30px;
-    border: 20px solid #b8a07e;
+    border: 20px solid #e3f2fd;
   }
   
   #about .div-img-bg .about-img img {
@@ -369,36 +303,25 @@ body {
   #about .about-descr .p-heading {
     font-family: "Playfair Display", serif;
     font-size: 28px;
-    text-align: left;
-  }
-  
-  #about .about-descr .separator {
-    max-width: 80%;
-    margin-bottom: 0;
-    text-align: left;
   }
   
   /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
   #services {
-    background: #f7f7f7;
-    position: relative;
-    padding-bottom: 80px;
+    background: black;
+    padding-bottom: 90px;
   }
-  
-  .services-block span {
-    margin: 10px 0;
-    position: relative;
-    font-size: 13px;
-    color: #292929;
-    letter-spacing: 0.1em;
-    font-weight: 500;
+
+  .services-block h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
-    display: block;
+    color: #e3f2fd;
+    font-weight: 500;
   }
   
-  .services-block .separator {
+  .services-block p {
     margin: 0;
     font-size: 13px;
     line-height: 22px;
@@ -406,25 +329,8 @@ body {
   
   .services-block i {
     font-size: 44px;
-    color: #b8a07e;
+    color: #e3f2fd;
     line-height: 44px;
-  }
-  
-  .services-slider .swiper-pagination {
-    margin-top: 30px;
-    position: relative;
-  }
-  
-  .services-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #b8a07e;
-  }
-  
-  .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #b8a07e;
   }
   
   /*--------------------------------------------------------------

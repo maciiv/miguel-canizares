@@ -12,8 +12,8 @@
 </head>
 <body>
     <nav id="header" class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <div class="container">
+          <a class="navbar-brand logo" href="#" title="Logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,12 +44,12 @@
             <div class="hero-content">
                 <h1>I'm <span class="typed"></h1>
                 <p>Researcher, Designer, Developer, Freelancer</p>
-                <ul class="list-unstyled list-social">
-                    <li><a href="https://orcid.org/0000-0002-9747-4266"><img style="height: 16.8px; margin-top: -2px" src="assets/img/orcid-logo-icon.svg" alt="OrcID" /></a></li>
-                    <li><a href="https://au.linkedin.com/in/miguel-canizares"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/mcanizaresmena"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="https://research.qut.edu.au/qutcds/staff/miguel-canizares/"><img style="height: 16.8px" src="assets/img/qut-logo.png" alt="QUT" /></a></li>
-                    <li><a href="https://scholar.google.com.au/citations?user=5afmF3IAAAAJ&hl=en&oi=ao"><img style="height: 16.8px" src="assets/img/google-scholar-logo.png" alt="Google Scholar" /></a></li>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://orcid.org/0000-0002-9747-4266"><img class="img-social orcid" src="assets/img/orcid-logo-icon.svg" alt="OrcID" /></a></li>
+                    <li class="list-inline-item"><a href="https://au.linkedin.com/in/miguel-canizares" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/mcanizaresmena" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://research.qut.edu.au/qutcds/staff/miguel-canizares/"><img class="img-social" src="assets/img/qut-logo.png" alt="QUT" /></a></li>
+                    <li class="list-inline-item"><a href="https://scholar.google.com.au/citations?user=5afmF3IAAAAJ&hl=en&oi=ao"><img class="img-social" src="assets/img/google-scholar-logo.png" alt="Google Scholar" /></a></li>
                 </ul>
             </div>
         </div>
@@ -61,16 +61,16 @@
                 <div class="col-lg-4">
                     <div class="div-img-bg">
                         <div class="about-img">
-                            <img src="assets/img/me.jpg" className="img-responsive" alt="me" />
+                            <img src="assets/img/me1.jpg" className="img-responsive" alt="me" />
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="about-descr">
-                        <p class="p-heading">
-                            I'm a researcher/developer passionate about including the human side in data analytics and technology.
-                        </p>
-                        <p class="separator">
+                        <h3 class="p-heading">
+                            I'm a researcher/developer passionate about including the human side in data analytics and technology
+                        </h3>
+                        <p>
                             Data is not as simple as numbers, there is an intrinsic relationship with the people who is represented by the data. 
                             The data collected only represents part of the people's context. 
                             In addition, the designer developing technology might have different understandings of the data and its context. 
@@ -88,33 +88,25 @@
     <div id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 swiper-slide">
-                    <div class="services-block">
-                        <i class="bi bi-binoculars"></i>
-                        <span>RESEARCH</span>
-                        <p class="separator">Human-computer interaction research with a human-centric approach </p>
-                    </div>
+                <div class="col-lg-3 services-block">
+                    <i class="bi bi-binoculars"></i>
+                    <h6>Research</h6>
+                    <p>Human-computer interaction research with a human-centric approach</p>
                 </div>
-                <div class="col-lg-3 swiper-slide">
-                    <div class="services-block">
-                        <i class="bi bi-briefcase"></i>
-                        <span>UI/UX DESIGN</span>
-                        <p class="separator">Human-centred design to build solutions with people not for people </p>
-                    </div>
+                <div class="col-lg-3 services-block">
+                    <i class="bi bi-briefcase"></i>
+                    <h6>UI/UX Design</h6>
+                    <p>Human-centred design to build solutions with people not for people </p>
                 </div>
-                <div class="col-lg-3 swiper-slide">
-                    <div class="services-block">
-                        <i class="bi bi-bar-chart"></i>
-                        <span>WEB DEVELOPMENT</span>
-                        <p class="separator">Full-stack web development with cutting-edge methods such as participatory design </p>
-                    </div>
+                <div class="col-lg-3 services-block">
+                    <i class="bi bi-bar-chart"></i>
+                    <h6>Web Development</h6>
+                    <p>Full-stack web development with cutting-edge methods such as participatory design </p>
                 </div>
-                <div class="col-lg-3 swiper-slide">
-                    <div class="services-block">
-                        <i class="bi bi-brightness-high"></i>
-                        <span>Analytics</span>
-                        <p class="separator">Analytics with interactive data visualisations to bring context to the data </p>
-                    </div>
+                <div class="col-lg-3 services-block">
+                    <i class="bi bi-brightness-high"></i>
+                    <h6>Analytics</h6>
+                    <p>Analytics with interactive data visualisations to bring context to the data </p>
                 </div>
             </div>
         </div>
@@ -122,8 +114,8 @@
 
     <div id="publications" class="paddsection">
         <div class="container">
-            <div class="section-title text-center">
-                <h2>My Publications</h2>
+            <div class="text-center">
+                <h3 class="text-uppercase mb-5">My Publications</h3>
             </div>
         </div>
         <div class="container">
@@ -139,8 +131,8 @@
 
     <div id="portfolio" class="paddsection">
         <div class="container">
-            <div class="section-title text-center">
-                <h2>My Portfolio</h2>
+            <div class="text-center">
+                <h3 class="text-uppercase mb-5">My Portfolio</h3>
             </div>
         </div>
         <div class="container">
@@ -261,7 +253,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+        <a href="#" class="btn btn-secondary btn-sm back-to-top" title="To top"><i class="bi bi-arrow-up-short"></i></a>
     </div>
 </body>
 </html>
