@@ -150,6 +150,20 @@ body {
     height: 17px
   }
 
+  #hero .animated-cursor {
+    animation: animated-cursor 750ms linear infinite;
+    border-right: solid;
+  }
+
+  @keyframes animated-cursor {
+    from {
+      border-right-color: #fff;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
   /*--------------------------------------------------------------
   # Breadcrumbs
   --------------------------------------------------------------*/

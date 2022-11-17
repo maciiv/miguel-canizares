@@ -38,7 +38,10 @@ const typeWriter = (wi = 0, ci = 0, deleting = false) => {
             }
             break
         case true:
-            if (wi + 1 === typedWords.length) return
+            if (wi + 1 === typedWords.length) {
+                typedSpan.classList.remove("animated-cursor")
+                return
+            }
             switch (true) {
                 case ci >= 0:
                     typedSpan.innerText = word.slice(0, ci)
