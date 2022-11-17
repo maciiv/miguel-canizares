@@ -31,13 +31,14 @@ const typeWriter = (wi = 0, ci = 0, deleting = false) => {
                     setTimeout(typeWriter, 500, wi, ci, true)
                     break
                 default:
-                    typedSpan.innerText += word.charAt(ci)
+                    typedSpan.innerText = word.slice(0, ci + 1)
                     ci++
                     setTimeout(typeWriter, 100, wi, ci)
                     break
             }
             break
         case true:
+            if (wi + 1 === typedWords.length) return
             switch (true) {
                 case ci >= 0:
                     typedSpan.innerText = word.slice(0, ci)
@@ -46,7 +47,7 @@ const typeWriter = (wi = 0, ci = 0, deleting = false) => {
                     break
                 default:
                     wi++
-                    if (wi < typedWords.length) setTimeout(typeWriter, 500, wi, ci)
+                    if (wi < typedWords.length) setTimeout(typeWriter, 500, wi)
                     break
             }
             break
